@@ -1,6 +1,6 @@
 ---
 language: nodejs
-version: 4.0
+version: '4.0'
 type: html
 folder: doc/
 main: index.html

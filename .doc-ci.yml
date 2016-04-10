@@ -1,9 +1,17 @@
 ---
 language: nodejs
 version: '4.0'
-type: html
-folder: doc/
-main: index.html
-env:
-  TEST_ENV: ciao
-  COMMIT: false 
+docs:
+  -
+    type: html
+    folder: doc/
+    main: index.html
+    env:
+      TEST_ENV: ciao
+      COMMIT: false 
+  -
+    type: artefact
+    folder: /
+    main: doc.zip
+    script: npm run doczip
+
